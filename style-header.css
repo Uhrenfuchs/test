@@ -1,0 +1,244 @@
+/* ------------------- */
+/* HEADER STYLES */
+/* ------------------- */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Futura', sans-serif, Arial;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 5%;
+    background: #ffffff;
+    border-bottom: 1px solid #e0e0e0;
+    position: relative;
+    z-index: 100 !important;
+}
+
+.logo {
+    color: #E11A27;
+    font-size: 1.8rem;
+    font-weight: 700;
+    text-decoration: none;
+    transition: opacity 0.3s;
+}
+
+.dropdown-container {
+    display: flex;
+    gap: 40px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.dropdown {
+    position: relative;
+    cursor: pointer;
+}
+
+.dropdown::before {
+    content: '';
+    position: absolute;
+    bottom: -15px;
+    left: 0;
+    width: 100%;
+    height: 15px;
+    background: transparent;
+}
+
+.dropdown-toggle {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 16px;
+    color: #333333;
+    padding-right: 25px;
+}
+
+.dropdown-arrow {
+    width: 12px;
+    height: 12px;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #ffffff;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+    min-width: 220px;
+    padding-top: 15px;
+    border-radius: 4px;
+    z-index: 1002;
+}
+
+.dropdown.active .dropdown-menu {
+    display: block;
+}
+
+.dropdown-menu ul {
+    list-style: none;
+    padding: 10px 0;
+}
+
+.dropdown-menu li {
+    padding: 12px 20px;
+    transition: background 0.2s;
+}
+
+.dropdown-menu li:hover {
+    background: #f8f9fa;
+}
+
+.dropdown-menu a {
+    color: #2c3e50;
+    text-decoration: none;
+    font-size: 14px;
+    display: block;
+}
+
+.nav-links {
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links a {
+    color: #E11A27;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #333333;
+}
+
+.hamburger {
+    display: none;
+    cursor: pointer;
+    font-size: 1.5rem;
+    color: #333;
+    z-index: 1002;
+    position: relative;
+    width: 24px;
+    height: 24px;
+}
+
+.nav-container {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+@media (max-width: 768px) {
+    .hamburger {
+        display: block;
+        order: 2;
+    }
+
+    .nav-container {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: white;
+        flex-direction: column;
+        padding: 80px 20px 20px;
+        overflow-y: auto;
+        z-index: 50 !important;
+    }
+
+    .nav-container.active {
+        display: flex;
+    }
+
+    .hamburger .fa-bars {
+        transition: opacity 0.3s;
+    }
+
+    .hamburger.active .fa-bars {
+        opacity: 0;
+    }
+
+    .hamburger::before,
+    .hamburger::after {
+        content: '';
+        position: absolute;
+        width: 24px;
+        height: 2px;
+        background: #333;
+        left: 0;
+        top: 50%;
+        transition: all 0.3s;
+        opacity: 0;
+    }
+
+    .hamburger.active::before {
+        transform: rotate(45deg);
+        opacity: 1;
+    }
+
+    .hamburger.active::after {
+        transform: rotate(-45deg);
+        opacity: 1;
+    }
+
+    .nav-container.active ~ .logo {
+        opacity: 0;
+        pointer-events: none;
+    }
+
+    .dropdown-container {
+        flex-direction: column;
+        gap: 20px;
+        position: static;
+        transform: none;
+        margin: 0;
+    }
+
+    .dropdown::before {
+        display: none;
+    }
+
+    .dropdown-toggle {
+        padding-right: 0;
+    }
+
+    .dropdown-arrow {
+        position: static;
+        transform: none;
+        margin-left: 5px;
+    }
+
+    .dropdown-menu {
+        position: static;
+        box-shadow: none;
+        padding-top: 5px;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        gap: 15px;
+        margin-top: 20px;
+        text-align: center;
+    }
+}
+
+@font-face {
+    font-family: 'Futura';
+    src: url('futura.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}

@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="Uhrenfuchs Watch Reviews" content="A passion project by a watch enthusiast who took on this challenge to improve his coding skills and dive into his hobby. Take a look around...">
+        <meta property="og:title" content="Uhrenfuchs Watch Reviews">
+        <meta property="og:description" content="A passion project by a watch enthusiast who took on this challenge to improve his coding skills and dive into his hobby. Take a look around...">
+        <meta property="og:image" content="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Flag_of_Switzerland.svg/1200px-Flag_of_Switzerland.svg.png">
+        <title>Uhrenfuchs | Dream Timepieces</title>
+        
+        <!-- Favicon -->
+        <link rel="icon" type="image/png" href="/header/Uhrenfuchs Logo.png">
+        
+        <!-- Stylesheets -->
+        <link rel="stylesheet" href="/css/style-header.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+        <link rel="stylesheet" href="/css/style.css">
+        <link rel="stylesheet" href="/css/style-footer.css">
+        <link rel="stylesheet" href="/css/style-suche.css">
+        <link rel="stylesheet" href="/css/sprache.css">
+    </head>
+<body>
+    <header>
+        <a href="/" class="logo">Uhrenfuchs</a>
+        
+        <div class="hamburger">
+            <i class="fas fa-bars"></i>
+        </div>
+
+        <div class="nav-container">
+            <div class="dropdown-container">
+                <!-- Brand Dropdown -->
+                <div class="dropdown">
+                    <span class="dropdown-toggle">
+                        Reviews by Brand
+                        <img src="/header/down-arrow.png" class="dropdown-arrow" alt="▼">
+                    </span>
+                    <div class="dropdown-menu">
+                        <ul>
+                            <li><a href="/html/uhren-tissot-marke-eng.html">Tissot</a></li>
+                            <li><a href="/html/uhren-seiko-marke-eng.html">Seiko</a></li>
+                            <li><a href="/html/uhren-marke-junghans-eng.html">Junghans</a></li>
+                            <li><a href="/html/uhren-marke-laco-eng.html">Laco</a></li>
+                            <li><a href="/html/uhren-marke-casio-eng.html">Casio</a></li>
+                            <li><a href="/html/uhren-marke-other-eng.html">Others</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Style Dropdown -->
+                <div class="dropdown">
+                    <span class="dropdown-toggle">
+                        Reviews by Style
+                        <img src="/header/down-arrow.png" class="dropdown-arrow" alt="▼">
+                    </span>
+                    <div class="dropdown-menu">
+                        <ul>
+                            <li><a href="/html/dresswatches-eng.html">Dress Watches</a></li>
+                            <li><a href="/html/taucheruhren-eng.html">Diving Watches</a></li>
+                            <li><a href="/html/allzweck-uhren-eng.html">All-Purpose</a></li>
+                            <li><a href="/html/gmt-eng.html">GMT</a></li>
+                            <li><a href="/html/pilotenuhren-eng.html">Pilot</a></li>
+                            <li><a href="/html/felduhren-eng.html">Field</a></li>
+                            <li><a href="/html/motorsportuhren-eng.html">Racing</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Price Range Dropdown -->
+                <div class="dropdown">
+                    <span class="dropdown-toggle">
+                        Reviews by Price Range
+                        <img src="/header/down-arrow.png" class="dropdown-arrow" alt="▼">
+                    </span>
+                    <div class="dropdown-menu">
+                        <ul>
+                            <li><a href="/html/uhren-unter-50€.html">Up to €50</a></li>
+                            <li><a href="/html/uhren50-250euro.html">€50–€250</a></li>
+                            <li><a href="/html/uhren250-500€.html">€250–€500</a></li>
+                            <li><a href="/html/uhren500-1000€.html">€500–€1000</a></li>
+                            <li><a href="/html/uhren-über1000€.html">Over €1000</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <nav class="nav-links">
+                <a href="index-eng.html">Home</a>
+                <a href="/html/startpunkt-eng.html">Start</a>
+                <a href="/html/about-eng.html">About</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Language Selection Popup -->
+    <div id="languagePopup" class="language-popup">
+        <div class="popup-content">
+            <button class="close-popup">×</button>
+            <h3>Select Language</h3>
+            <div class="flags-container">
+                <div class="flag-option active" data-lang="en">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/a/a4/Flag_of_the_United_States.svg" alt="Englisch">
+                    <span>English</span>
+                </div>
+                <div class="flag-option" data-lang="de">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/b/ba/Flag_of_Germany.svg" alt="Deutsch">
+                    <span>German</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+   
+
+    <!-- Language Icon -->
+    <div id="languageIcon" class="language-icon">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/a/a4/Flag_of_the_United_States.svg" alt="Language Selection">
+    </div>
+
+    <button class="search-toggle"></button>
+    
+    <!-- Search Overlay -->
+    <div class="search-overlay">
+        <button class="close-btn">×</button>
+        <div class="search-container">
+            <input type="text" id="search-input" placeholder="Search...">
+            
+            <!-- Live search results -->
+            <div class="search-results"></div>
+
+            <!-- Examples -->
+            <div class="search-examples">
+                <h3>Example search terms:</h3>
+                <ul class="example-list">
+                    <li>Tissot watches</li>
+                    <li>Watches under €250</li>
+                    <li>Latest reviews</li>
+                    <li>Seiko watches</li>
+                    <li>About us</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <p class="slogan">Authentic Reviews.<br> On the hunt for your perfect watch.</p>
+    <p class="slogan-text">Take a look around and get a first impression:</p>
+
+    <section class="grid-container">
+        <div class="box">
+            <a href="/html/neuste-reviews-eng.html" class="image-container">
+                <img src="/img-index/img-index-navigator/index-navigation-1-eng.png" alt="Latest Reviews">
+            </a>
+        </div>
+        <div class="box">
+            <a href="/html/startpunkt-eng.html" class="image-container">
+                <img src="/img-index/img-index-navigator/index-navigation-2-eng.png" alt="Start Point">
+            </a>
+        </div>
+        <div class="box">
+            <a href="/html/guides&tutorials-eng.html" class="image-container">
+                <img src="/img-index/img-index-navigator/index-navigation-3.png" alt="Guides and Tutorials">
+            </a>
+        </div>
+        <div class="box">
+            <a href="/html/shortlist-eng.html" class="image-container">
+                <img src="/img-index/img-index-navigator/index-navigation-4-eng.png" alt="Overview">
+            </a>
+        </div>
+    </section>
+
+    <section class="featured-publications">
+        <h2 class="section-heading">You may already know us from:</h2>
+        <div class="publications-container">
+            <a href="https://www.watchcrunch.com/" class="publication-link">
+                <img src="/img-index/WatchChrunch Logo.png" alt="WatchCrunch" class="publication-logo">
+            </a>
+            <a href="https://www.instagram.com/" class="publication-link">
+                <img src="/img-index/instagram logo.png" alt="Instagram" class="publication-logo2">
+            </a>
+            <a href="https://blank.page/" class="publication-link">
+                <img src="/img-index/watch guy essentials logo.png" alt="Watch Guy Essentials" class="publication-logo3">
+            </a>
+        </div>
+    </section>
+
+    <p class="Starting-Out">Don’t know where to start?</p>
+    <p class="starting-text">Start understanding the world of watches with just one click:</p>
+    <div class="container">
+        <a href="/html/startpunkt-eng.html" class="image-link">
+            <img src="/img-index/Starting Out.png" 
+                 alt="Getting Started" 
+                 class="rounded-image">
+        </a>
+    </div>
+    <p class="starting-artikel">The world of watches can feel like a confusing labyrinth at first — something you have to learn to navigate. To support your first watch purchase, check out our favorite beginner picks.</p>
+    
+    <p class="reports-überschrift">Top Reports:</p>
+
+    <section class="container-reports">
+        <div class="image-container-reports">
+            <a href="/html/uhren-zu-vermeiden-eng.html" class="image-link-reports">
+                <img src="/img-index/Uhren-nicht kaufen.png" alt="Report Cover" class="image-reports">
+            </a>
+        </div>
+        
+        <div class="text-container-reports">
+            <h2 class="heading-reports">Watches Beginners Should Avoid</h2>
+            <div class="text-content-wrapper">
+                <p class="content-reports">
+                    Not every watch is worth the money – some are downright disappointments. From the overpriced Moonswatch to cheap “Amazon’s Choice” models and fashion brands with no watchmaking heritage – here's what you might want to avoid.
+                    <a href="/html/uhren-zu-vermeiden-eng.html" class="read-more-link-reports">Read more</a>
+                </p>
+            </div>
+            <div class="red-line"></div>
+        </div>
+    </section>
+
+    <section class="container-reports">
+        <div class="image-container-reports">
+            <a href="/html/honda-uhr-eng.html" class="image-link-reports">
+                <img src="/img-index/Honda Uhr.png" alt="Report Cover" class="image-reports">
+            </a>
+        </div>
+        
+        <div class="text-container-reports">
+            <h2 class="heading-reports">Honda Watch – I Wish It Existed</h2>
+            <div class="text-content-wrapper">
+                <p class="content-reports">
+                    The Honda Speedometer Watch caught my attention, even though it’s probably just a Photoshop fake. Maybe the idea will become reality one day.
+                    <a href="/html/honda-uhr-eng.html" class="read-more-link-reports">Read more</a>
+                </p>
+            </div>
+            <div class="red-line"></div>
+        </div>
+    </section>
+
+    <section class="container-reports">
+        <div class="image-container-reports">
+            <a href="/html/uhren-unter-250-eng.html" class="image-link-reports">
+                <img src="/img-index/beste uhren unter 250.png" alt="Report Cover" class="image-reports">
+            </a>
+        </div>
+        
+        <div class="text-container-reports">
+            <h2 class="heading-reports">Best Watches Under €250</h2>
+            <div class="text-content-wrapper">
+                <p class="content-reports">
+                    Affordable watches can still deliver quality: the Timex Reissue 38mm charms with retro style, the Casio Edifice EFR-575L-7A with sporty looks and sapphire crystal, and the Seiko SUR311P with understated elegance. Great entry-level models with minimal compromises.
+                    <a href="/html/uhren-unter-250-eng.html" class="read-more-link-reports">Read more</a>
+                </p>
+            </div>
+            <div class="red-line"></div>
+        </div>
+    </section>
+
+    <section class="feature-section-build">
+        <a href="#" class="image-container-build">
+          <img src="/img-index/build-your-own-watch.png" alt="Build Your Own Watch" class="feature-image-build">
+        </a>
+        <h1 class="feature-heading-build">Build Your Own Watch</h1>
+        <p class="feature-text-build">Nothing makes a watch more special than building it yourself. Thanks to AliExpress, we have access to affordable and easy-to-install components. With this guide, you can start your own project. Nothing beats something handmade – so go ahead and create your dream watch. <br><br><a href="#" class="hidden-link">Start building — Lego for watch lovers...</a></p>
+    </section>
+
+    <!-- FAQ Section -->
+    <div class="custom-faq-wrapper">
+        <div class="custom-faq-main">
+            <h2 class="custom-faq-heading">Frequently Asked Questions</h2>
+            
+            <div class="custom-faq-element">
+                <div class="custom-faq-question" tabindex="0">
+                    What are my top watches?
+                </div>
+                <div class="custom-faq-answer">
+                    <p>Like every watch collector, I can’t answer this objectively. But some watches I like are already in my collection – which means they’re my favorites. Check them out in the <a href="#" class="bold-link">About</a> section. <br> Enjoy!</p>
+                </div>
+            </div>
+
+            <div class="custom-faq-element">
+                <div class="custom-faq-question" tabindex="0">
+                   Tutorials and Help
+                </div>
+                <div class="custom-faq-answer">
+                    <p>Whether you're resizing your strap or ordering safely on AliExpress — the resources in <a href="#" class="bold-link">Tutorials and Help</a> will help you save money and avoid shady offers.</p>
+                </div>
+            </div>
+
+            <div class="custom-faq-element">
+                <div class="custom-faq-question" tabindex="0">
+                    How do I find a watch I like?
+                </div>
+                <div class="custom-faq-answer">
+                    <p>Watches are as individual as their wearers. It’s best to browse different styles and see what resonates with you. Once you find a category that suits you, explore the various models there. The world of watches is so vast, I can’t even cover 0.1% of it here. You may discover your dream watch elsewhere too.</p>
+                </div>
+            </div>
+
+            <div class="custom-faq-element">
+                <div class="custom-faq-question" tabindex="0">
+                   Watch Glossary
+                </div>
+                <div class="custom-faq-answer">
+                    <p>To understand the features of timepieces better, a look at the specs often helps. The <a href="#" class="bold-link">Watch Glossary</a> explains the most important terms you should know about your watch's technology.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="image-between-sections">
+        <img src="./header/Uhrenfuchs Logo.png" 
+             class="tiny-image-between" 
+             alt="Small centered motif">
+    </div>
+
+    <footer id="main-footer">
+        <hr class="top-line">
+      
+        <div class="footer-row">
+          <div class="footer-column1">
+            <a href="/html/neuste-reviews-eng.html">Latest Reviews</a>
+            <a href="/html/startpunkt-eng.html">Start Point</a>
+            <a href="/html/guides&tutorials-eng.html">Guides & Tutorials</a>
+            <a href="/html/shortlist-eng.html">Overview</a>
+            <a href="/html/glossar-eng.html">Watch Glossary</a>
+          </div>
+          <div class="footer-column2">
+            <a href="index-eng.html">Home</a>
+            <a href="/html/startpunkt-eng.html">Start</a>
+            <a href="/html/about-eng.html">About</a>
+            <a href="/html/kontakt-eng.html">Contact</a>
+          </div>
+        </div>
+      
+        <hr class="bottom-line">
+      
+        <div class="footer-bottom">
+          <div class="brand">Uhrenfuchs 2025 ©</div>
+          <div class="footer-inline-links">
+            <a href="/html/datenschutzerklärung-eng.html">Privacy Policy</a>
+            <a href="/html/impressum-eng.html">Legal Notice</a>
+          </div>
+        </div>
+    </footer>
+
+    <script src="/js/header.js"></script>
+    <script src="/js/startseite.js"></script>
+    <script src="/js/suche.js"></script>
+    <script src="/js/sprache.js"></script>
+    <script src="/js/sprache-others.js?v=2"></script>
+</body>
+</html>
